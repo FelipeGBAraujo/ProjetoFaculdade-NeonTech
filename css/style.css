@@ -11,6 +11,10 @@ header {
     font-size: 30px;
 }
 
+.links-head:hover {
+    cursor: pointer;
+}
+
 .links-head-center {
     font-family: 'Retro', Verdana;
     flex: 1;
@@ -38,6 +42,17 @@ header {
             margin-right: 10px;
         }
 
+.btn-ghost {
+    margin-top: 10px;
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+
+.btn-ghost:hover {
+    cursor: pointer;
+}
+
 .slogan {
     font-size: 25px;
     justify-content: center;
@@ -49,6 +64,10 @@ header {
 .section-botoes {
     justify-content: flex-end;
     height: 440px;
+}
+
+#comprar:hover {
+    cursor: pointer;
 }
 
 .section-box {
@@ -111,6 +130,10 @@ header {
     height: 800px;
 
     background-color: #c7c3c5;
+}
+
+#focus-sobre {
+    z-index: -1;
 }
 
 .title-bar {
