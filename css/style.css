@@ -1,0 +1,460 @@
+/* Header */
+header {
+    padding: 20px;
+}
+
+.links-head {
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+.links-head-center {
+    font-family: 'Retro', Verdana;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.gatinho {
+    position: absolute;
+    z-index: -1;
+    margin-top: 12px;
+    margin-right: 15px;
+}
+
+    .central {
+        text-shadow: 3px 3px 3px rgb(255, 255, 255);
+        text-decoration: none;
+        color: black;
+        font-size: 60px;
+    }
+
+        .jogaprofim {
+            justify-content: flex-end;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+.slogan {
+    font-size: 25px;
+    justify-content: center;
+    margin-bottom: 15vh;
+}
+
+/* Botões e Promoção */
+
+.section-botoes {
+    justify-content: flex-end;
+    height: 440px;
+}
+
+.section-box {
+    height: 400px;
+    margin-left: 10vw;
+    background-color: #696565;
+    border-radius: 10px;
+}
+
+    .imagem {
+        height: 300px;
+    }
+
+/* Cards */
+
+.card-boxes {
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.guard {
+    gap: 6.5vw;
+}
+
+.full-card {
+    margin: 0;
+}
+
+.bordinha {
+    margin-bottom: 395px;
+    position: absolute;
+}
+
+.card {
+    width: 350px;
+    border-radius: 10px;
+    background-color: #b5b5b5;
+    padding-top: 20px;
+    border: 2px dotted black;
+}
+
+    .nome {
+        font-size: 20px;
+        text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    }
+
+    .botao-card {
+        scale: 0.8;
+    }
+
+/* Sobre */
+
+.box {
+    margin-top: 60px;
+
+    border-right: 8px solid black;
+    border-bottom: 8px solid black;
+
+    width: 793px;
+    height: 800px;
+
+    background-color: #c7c3c5;
+}
+
+.title-bar {
+    height: 60px;
+    
+    font-size: 30px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+
+    border-right: 8px solid rgba(0, 0, 0, 0.7);
+
+    border-bottom: 8px solid rgba(0, 0, 0, 0.7);
+
+    border-left: 8px solid rgba(255, 255, 255, 0.7);
+    border-top: 8px solid rgba(255, 255, 255, 0.7);
+
+    background-color: blue;
+}
+
+.under {
+    height: 50px;
+
+    border-right: 8px solid rgba(0, 0, 0, 0.7);
+
+    border-top: 8px solid rgba(255, 255, 255, 0.8);
+
+    border-left: 8px solid rgba(255, 255, 255, 0.7);
+
+    border-bottom: 10px solid rgba(0, 0, 0, 0.7);
+    
+    background-color: #c7c3c5;
+}
+
+.content {
+    border-left: 8px solid rgb(255, 255, 255);
+
+    text-align: left;
+
+    font-size: 27px;
+
+    padding: 15px;
+
+    padding-right: 40px;
+
+    height: 625px;
+
+    color: black;
+
+    background-color: #c7c3c5;
+}
+
+    .text-box {
+        width: 100%;
+        height: 100%;
+
+        margin: 0;
+    }
+
+    .highlight {
+        color: rgb(165, 0, 0);
+    }
+
+.scroll {
+    position: absolute;
+
+    margin-left: -228px;
+    margin-top: -355px;
+}
+
+
+/* Bonecos */
+
+.guard-char {
+    margin-top: 60px;
+
+    gap: 4vw;
+}
+
+.bonecos {
+    background-color: #b5b5b5;
+
+    width: 350px;
+    height: 200px;
+
+    border-radius: 10px;
+    border: 2px dotted black;
+}
+
+.bordinha-char {
+    margin-bottom: 205px;
+    position: absolute;
+}
+
+    .title-nome {
+        font-size: large;
+        text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    }
+
+    .disc {
+        list-style-type: disc;
+
+        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+
+        text-align: left;
+    }
+
+        .perso {
+            position: absolute;
+            margin-left: -50px;
+            margin-top: 20px;
+        }
+
+.status {
+    color: black;
+}
+
+        .coracao {
+            font-size: 30px;
+        }
+
+        .barrier {
+            width: 60px;
+            height: 15px;
+
+            border: 2px solid black;
+            border-radius: 5px;
+
+            margin-right: 10px;
+        }
+
+        .life1 {
+            margin-left: -15px;
+            width: 60px;
+            height: 15px;
+
+            border: 2px solid black;
+            border-radius: 10px;
+
+            background: linear-gradient(to left, black 70%, transparent 30%);
+
+            margin-right: 10px;
+        }
+
+            .inside-barrier1 {
+                width: 56px;
+                height: 11px;
+
+                border-radius: 3px;
+
+                background: linear-gradient(to right, black 30%, transparent 0%);
+            }
+        
+            .life2 {
+                margin-left: -15px;
+                width: 60px;
+                height: 15px;
+    
+                border: 2px solid black;
+                border-radius: 10px;
+    
+                background: linear-gradient(to left, black 40%, transparent 0%);
+    
+                margin-right: 10px;
+            }
+    
+                .inside-barrier2 {
+                    width: 56px;
+                    height: 11px;
+    
+                    border-radius: 3px;
+    
+                    background: linear-gradient(to right, black 100%, transparent 0%);
+                }
+
+                .life3 {
+                    margin-left: -15px;
+                    width: 60px;
+                    height: 15px;
+        
+                    border: 2px solid black;
+                    border-radius: 10px;
+        
+                    background: linear-gradient(to left, black 20%, transparent 0%);
+        
+                    margin-right: 10px;
+                }
+        
+                    .inside-barrier3 {
+                        width: 56px;
+                        height: 11px;
+        
+                        border-radius: 3px;
+        
+                        background: linear-gradient(to right, black 100%, transparent 0%);
+                    }
+
+                    .life4 {
+                        margin-left: -15px;
+                        width: 60px;
+                        height: 15px;
+            
+                        border: 2px solid black;
+                        border-radius: 10px;
+            
+                        background: linear-gradient(to left, black 25%, transparent 0%);
+            
+                        margin-right: 10px;
+                    }
+            
+                        .inside-barrier4 {
+                            width: 56px;
+                            height: 11px;
+            
+                            border-radius: 3px;
+            
+                            background: linear-gradient(to right, black 65%, transparent 0%);
+                        }
+
+                        .life5 {
+                            margin-left: -15px;
+                            width: 60px;
+                            height: 15px;
+                
+                            border: 2px solid black;
+                            border-radius: 10px;
+                
+                            background: linear-gradient(to left, black 70%, transparent 0%);
+                
+                            margin-right: 10px;
+                        }
+                
+                            .inside-barrier5 {
+                                width: 56px;
+                                height: 11px;
+                
+                                border-radius: 3px;
+                
+                                background: linear-gradient(to right, black 30%, transparent 0%);
+                            }
+
+                            .life6 {
+                                margin-left: -15px;
+                                width: 60px;
+                                height: 15px;
+                    
+                                border: 2px solid black;
+                                border-radius: 10px;
+                    
+                                background: linear-gradient(to left, black 40%, transparent 0%);
+                    
+                                margin-right: 10px;
+                            }
+                    
+                                .inside-barrier6 {
+                                    width: 56px;
+                                    height: 11px;
+                    
+                                    border-radius: 3px;
+                    
+                                    background: linear-gradient(to right, black 100%, transparent 0%);
+                                }
+
+                                .life7 {
+                                    margin-left: -15px;
+                                    width: 60px;
+                                    height: 15px;
+                        
+                                    border: 2px solid black;
+                                    border-radius: 10px;
+                        
+                                    background: linear-gradient(to left, black 30%, transparent 0%);
+                        
+                                    margin-right: 10px;
+                                }
+                        
+                                    .inside-barrier7 {
+                                        width: 56px;
+                                        height: 11px;
+                        
+                                        border-radius: 3px;
+                        
+                                        background: linear-gradient(to right, black 100%, transparent 0%);
+                                    }
+
+/* Pezinho */
+
+.borda_foot {
+    position: absolute;
+    margin-bottom: 313px;
+}
+
+.pedal {
+    margin: 0;
+
+    border-top: 6px dotted black;
+
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    
+    width: 100%;
+    background: linear-gradient(to right, #2e2e2ec8, #3e3e3eb8, #575757b8);
+
+    margin-top: 30px;
+
+    height: 300px;
+
+    font-size: 10px;
+}
+
+.title-foot {
+    font-size: 28px;
+}
+
+/*cad */
+.block-cad {
+    margin-top: 60px;
+    text-align: left;
+    width: 300px;
+}
+
+.cad {
+    color: black;
+    text-shadow: 0px 0px 0px rgb(0, 0, 0);
+}
+
+.block-cad input {
+    text-shadow: 0px 0px 0px rgb(0, 0, 0);
+    color: black;
+    height: 30px;
+    padding: 5PX
+}
+
+.pezinho {
+    margin-top: 100px;
+}
+
+.here {
+    color: black;
+    text-decoration: none;
+}
+
+/* login */
+.login {
+    margin-top: 180px;
+}
+
+.pelogin {
+    margin-top: 200px;
+}

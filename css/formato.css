@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Retro';
+    src: url('../fontes/Retro Gaming.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Retro';
+    color: white;
+
+    margin: 0;
+
+    background-image: url('../img/background.png'); /* Caminho correto para a imagem */
+    background-size: cover; /* A imagem cobre toda a área visível */
+    background-position: center; /* A imagem fica centralizada */
+    background-attachment: scroll;
+    background-repeat: no-repeat; /* Não repete a imagem */
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+.text {
+    color: white;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+}
+
+    .texto-sobre {
+        position: absolute;
+        color: white; /* Cor do texto */
+        font-weight: bold;
+        font-size: 30px;
+        text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    }
+
+.container {
+    display: flex;
+}
+
+.container-principal {
+    display: flex;
+    z-index: 1;
+}
+
+    .escadinha {
+        flex-direction: column;
+    }
+
+.centraliza {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item {
+    flex: 1;
+}
+
+.space-between {
+    justify-content: space-between;
+}
