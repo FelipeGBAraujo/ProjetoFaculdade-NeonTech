@@ -20,23 +20,51 @@
 </head>
 <body>
 
-    <div class="container-principal escadinha">
+    <div class="container-principal escadinha" id="acima">
 
         <!-- Cabeçalho -->
         <header class="container">
         <div class="container flex-item">
-            <a class="links-head" href="#"> Sobre Nós </a>
-            <a class="links-head" href="#"> Contato </a>
+            <a class="links-head" onclick="scrollToSection()"> Sobre Nós </a>
+            <a class="links-head" onclick="scrollToPedal()"> Contato </a>
         </div>
         
         <div class="container links-head-center">
             <a class="central" href="#"> NEONTECH </a>
         </div>
 
-        <div class="container flex-item jogaprofim">
-            <a href="#"> <img src="img/bauunico.png"> </a>
-            <img src="img/gatos/gato-preto.png" class="gatinho">
-            <a href="./cadastro.html"> <img src="img/quadro.png"> </a>
+        <!-- Conteúdo principal -->
+        <div class="container flex-item jogaprofim"> 
+            <a href="./cadastro.html"> <span id="contador" style="
+                margin-left: 40px;
+                margin-top: -8px;
+                position: absolute;
+                background-color: red;
+                color: white;
+                border-radius: 50%;
+                padding: 5px 10px;
+                font-size: 14px;
+                display: none;">0</span> <img id="imagem-bau" src="img/bauunico.png"> </a>
+
+            <img id="imagem-gatinho" src="img/gatos/gato-preto.png" class="gatinho">
+            <a href="#"> <img src="img/quadro.png" onclick="openImageModal()"> </a>
+        </div>
+
+        <!-- Modal para seleção de imagens -->
+        <div id="imageModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);">
+            <div style="background: #2e2e2e; width: 80%; border: 2px solid white; border-radius: 10px; max-width: 500px; margin: 50px auto; padding: 20px; text-align: center;">
+                <h3>Escolha Seu Gatinho</h3>
+                <div style="display: flex; justify-content: center; gap: 10px;">
+                    <!-- Imagens disponíveis para seleção -->
+                    <img src="img/gatos/gato-cinza.png" onclick="selectImage('img/gatos/gato-cinza.png')" style="width: 80px; cursor: pointer;">
+                    <img src="img/gatos/gato-mist.png" onclick="selectImage('img/gatos/gato-mist.png')" style="width: 80px; cursor: pointer;">
+                    <img src="img/gatos/gato-sia.png" onclick="selectImage('img/gatos/gato-sia.png')" style="width: 80px; cursor: pointer;">
+                    <img src="img/gatos/gato-laranja.png" onclick="selectImage('img/gatos/gato-laranja.png')" style="width: 80px; cursor: pointer;">
+                    <img src="img/gatos/gato-preto.png" onclick="selectImage('img/gatos/gato-preto.png')" style="width: 80px; cursor: pointer;">
+                    <!-- Adicione mais imagens conforme necessário -->
+                </div>
+                <button class="btn-ghost" onclick="closeImageModal()">Cancelar</button>
+            </div>
         </div>
         </header>
 
@@ -66,7 +94,7 @@
                     <div class="container centraliza escadinha">
                         <img src="img/logos/nintendo.png">
                         <div class="container centraliza"> <img src="img/coins.png"> <h1 class="text"> R$899,99 </h1> </div>
-                        <a class="container centraliza flex-item" href=""> <span class="texto-sobre centraliza">COMPRAR</span> <img src="img/botao.png">   </a>
+                        <a class="container centraliza flex-item" id="comprar"> <span class="texto-sobre centraliza">COMPRAR</span> <img src="img/botao.png">   </a>
                     </div>
                 </div>
             </div>
@@ -83,7 +111,7 @@
                         <h1 class="text nome"> Nintendo Entertainment System </h1>
                         <h1 class="text"> R$1.290,99 </h1>
                     </div>
-                    <a class="container centraliza flex-item botao-card" href=""> <span class="texto-sobre centraliza">COMPRAR</span> <img src="img/botao.png">   </a>
+                    <a class="container centraliza flex-item botao-card" id="comprar"> <span class="texto-sobre centraliza">COMPRAR</span> <img src="img/botao.png">   </a>
                 </div>
 
                 <div class="container centraliza escadinha flex-item full-card">
@@ -93,7 +121,7 @@
                         <h1 class="text nome"> Atari-2600-Wood <br> 4Sw-Set </h1>
                         <h1 class="text"> R$1.550,80 </h1>
                     </div>
-                    <a class="container centraliza flex-item botao-card" href=""> <span class="texto-sobre centraliza">COMPRAR</span> <img src="img/botao.png">   </a>
+                    <a class="container centraliza flex-item botao-card" id="comprar"> <span class="texto-sobre centraliza">COMPRAR</span> <img src="img/botao.png">   </a>
                 </div>
 
                 <div class="container centraliza escadinha flex-item full-card">
@@ -103,7 +131,7 @@
                         <h1 class="text nome"> MegaDrive <br> JP </h1>
                         <h1 class="text"> R$1.220,90 </h1>
                     </div>
-                    <a class="container centraliza flex-item botao-card" href=""> <span class="texto-sobre centraliza">COMPRAR</span> <img src="img/botao.png">   </a>
+                    <a class="container centraliza flex-item botao-card" id="comprar"> <span class="texto-sobre centraliza">COMPRAR</span> <img src="img/botao.png">   </a>
                 </div>   
             </div>
 
@@ -115,7 +143,7 @@
                         <h1 class="text nome"> Console Dynavision <br> Xtreme </h1>
                         <h1 class="text"> R$399,90 </h1>
                     </div>
-                    <a class="container centraliza flex-item botao-card" href=""> <span class="texto-sobre centraliza">COMPRAR</span> <img src="img/botao.png">   </a>
+                    <a class="container centraliza flex-item botao-card" id="comprar"> <span class="texto-sobre centraliza">COMPRAR</span> <img src="img/botao.png">   </a>
                 </div>
 
                 <div class="container centraliza escadinha flex-item full-card">
@@ -125,7 +153,7 @@
                         <h1 class="text nome"> Nintendo Game <br> Boy </h1>
                         <h1 class="text"> R$780,00 </h1>
                     </div>
-                    <a class="container centraliza flex-item botao-card" href=""> <span class="texto-sobre centraliza">COMPRAR</span> <img src="img/botao.png">   </a>
+                    <a class="container centraliza flex-item botao-card" id="comprar"> <span class="texto-sobre centraliza">COMPRAR</span> <img src="img/botao.png">   </a>
                 </div>
 
                 <div class="container centraliza escadinha flex-item full-card">
@@ -135,13 +163,13 @@
                         <h1 class="text nome"> PlayStation One <br> Classic </h1>
                         <h1 class="text"> R$1.499,99 </h1>
                     </div>
-                    <a class="container centraliza flex-item botao-card" href=""> <span class="texto-sobre centraliza">COMPRAR</span> <img src="img/botao.png">   </a>
+                    <a class="container centraliza flex-item botao-card" id="comprar"> <span class="texto-sobre centraliza">COMPRAR</span> <img src="img/botao.png">   </a>
                 </div>   
             </div>
         </section>
 
         <!-- Sobre -->
-        <section class="container centraliza escadinha">
+        <section class="container centraliza escadinha" id="focus-sobre">
             <div class="box">
                 <div class="container centraliza title-bar">
                     <span class="title"> SOBRE A NEONTECH </span>
@@ -325,7 +353,7 @@
             </div>
         </section>
 
-        <footer class="container centraliza pedal">
+        <footer class="container centraliza pedal" id="pedal">
             <img class="borda_foot" src="img/bordinha_foot.png">
 
             <div class="container centraliza escadinha flex-item">
@@ -336,7 +364,7 @@
             </div>
 
             <div class="container links-head-center flex-item">
-                <a class="central" href="#"> NEONTECH </a>
+                <a class="central" style="cursor: pointer;" onclick="focusonTop()"> NEONTECH </a>
             </div>
 
             <div class="container centraliza escadinha flex-item">
